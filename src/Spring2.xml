@@ -1,0 +1,37 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 20.//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+	<beans>
+
+	 <bean id="ShapeCollections" class = "collectios.dependency.injection.ShapeCollections">
+			<property name = "pointlist">
+			<list>
+			<ref bean = "pointCollections0" />
+			<ref bean = "pointCollections1" />
+			<ref bean = "pointCollections2" />	  
+			</list>
+			</property>
+	</bean>	
+	
+
+	<bean id="pointCollections0" class = "collectios.dependency.injection.PointCollections">
+		 	<property name= "X" value = "0" />
+			<property name= "Y" value = "0" />   
+	</bean>
+	
+	<bean id="pointCollections1" class = "collectios.dependency.injection.PointCollections">
+		 	<property name= "X" value = "0" />
+			<property name= "Y" value = "20" />   
+	</bean>
+
+	<bean id="pointCollections2" class = "collectios.dependency.injection.PointCollections">
+		 	<property name= "X" value = "15" />
+			<property name= "Y" value = "20" />   
+	</bean>	
+	
+	</beans>
+	
+			
+	
+		
+	
