@@ -3,8 +3,6 @@ package AutowireAnnotationBased;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.spring.test.Triangle;
-
 public class DrawShape {
 
 	public static void main(String[] args) {
